@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Portfolio - Yusra Nadeem</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/159ea6316b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="/images/logo1.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Front End Developer</p>
+                    <h1>Hi, I'm <span>Yusra Nadeem</span><br> from Quetta, Pakistan</h1>
+                </div>
+            </div>
+        </div>
+        <!---------About----------->
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                           laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                           voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                           non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                           <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                           </div>
+                           <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024-present</span><br>Web Developer Intern at Prodigy InfoTechs</li>
+                                <li><span>2023</span><br>Web Developer Intern at Codsoft</li>
+                                <li><span>2023</span><br>Machine Learning Intern at EMBEDAIOT</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2024</span><br>Bachelors of Computer Science at NUST</li>
+                                <li><span>2020</span><br>Higher Secondary School Education, APSACS, Sibi</li>
+                            </ul>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------Services---------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Front End Web Development</h2>
+                        <p>Professional in creating dynamic and interactive websites with the knowledge
+                         of html, css, js and typescript.</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development</h2>
+                        <p>Creating efficient and functional apps on both platforms android and iOS 
+                         with the knowledge of react native</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Creating creative, dynamic and luscious designs for websites and apps with the
+                         knowledge of figma and adobe XD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!----------portfolio---------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/images/work-1.png">
+                        <div class="layer">
+                            <h3>Landing Page</h3>
+                            <p>Welcome to our landing page! Discover our innovative products and services designed to meet your needs. 
+                               Join our community today and embark on a journey towards excellence.</p>
+                            <a href='projects-folder\landing_page\index.html'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/images/work-2.png">
+                        <div class="layer">
+                            <h3>Tic Tac Toe</h3>
+                            <p>Challenge your friends to a classic game of Tic Tac Toe! Enjoy hours of fun and strategic gameplay, 
+                               whether you're a beginner or a seasoned player. Ready to claim victory? Let the games begin!</p>
+                            <a href='projects-folder\Tic Tac Toe\index.html'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/images/work-3.png">
+                        <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>Stay ahead of the forecast with our intuitive weather app. Get real-time updates, detailed forecasts, 
+                               and personalized alerts to plan your day with confidence, rain or shine.</p>
+                            <a href='projects-folder\Weather App\index.html'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!----------------Contacts------------------>
+<div id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>yusrazai241@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+92 3337742772</p>
+                <div class="social-icons">
+                    <a href='https://www.instagram.com/yusranadeem1/'><i class="fa-brands fa-instagram"></i></a>
+                    <a href='https://www.linkedin.com/in/yusra-nadeem-458883218/'><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/yusra-resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Yusra. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+        <script>
+
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+            function openTab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwn1jWfwOGdf4GT787rY2eIamPizLJktMsCYnxh0l7uQr127ctrTLLUXBN5qEA7JrVf/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
