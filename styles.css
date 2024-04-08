@@ -8,17 +8,17 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #080808;
+    background-color: #fcf9f9;
     padding: 20px;
     margin: 20px;
-    color: #fff;
+    color: #030303;
 }
 #header{
     width: 100%;
     height: 100vh;
     background-image: url(/images/yusra.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: cover; 
+    background-position: left center;
 }
 .container{
     padding: 10px 10%;
@@ -37,28 +37,40 @@ nav ul li{
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
-    color: #fff;
+nav ul li a {
+    color: #080808;
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    transform: scale(1);
+    transition: transform 0.3s ease; /* Add transition for transform */
+    display: inline-block; /* Ensure proper positioning */
 }
-nav ul li a::after{
+
+nav ul li:hover a {
+    transform: scale(1.5);  /* grow in size */
+}
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #a00133e7;
+    background: #a00133e7; /* Red line color */
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+    display: block; /* Ensure proper display */
 }
-nav ul li a:hover::after{
-    width: 100%;
+
+nav ul li:hover a::after {
+    width: 100%; /* Expand the red line when hovered */
 }
 .header-text{
+    text-align: left;
     margin-top: 20%;
     font-size: 30px;
+    color: #f8f4f4;
 }
 .header-text h1{
     font-size: 40px;
@@ -71,7 +83,7 @@ nav ul li a:hover::after{
 /*----------------about---------------*/
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #fdfafa;
 }
 .row{
     display: flex;
@@ -80,6 +92,7 @@ nav ul li a:hover::after{
 }
 .about-col-1{
     flex-basis: 35%;
+    color: #f8f4f4;
 }
 .about-col-1 img{
     width: 100%;
@@ -91,7 +104,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #030303;
 }
 
 .tab-titles{
@@ -154,7 +167,7 @@ nav ul li a:hover::after{
     margin-top: 10px; /* Add some space between paragraphs */
 }
 .service-list div{
-    background: #262626;
+    background: #a9a8a8;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -206,7 +219,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #921f44);
+    background: linear-gradient(rgba(251, 250, 250, 0.6), #921f44);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -320,7 +333,7 @@ form .btn2{
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -332,7 +345,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #fafafa;
     font-weight: 300;
     margin-top: 20px;
 }
